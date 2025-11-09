@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House - Team Project</title>
+    
+    <!-- CSS Files -->
+     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    
+    <!-- ============================================ -->
+    <!-- PERSON 1: Header - START -->
+    <!-- ============================================ -->
+    <header id="header">
+        <div class="header-container">
+            <h1 class="logo">☕ Coffee House</h1>
+            <nav class="nav">
+                <button class="nav-btn" data-target="menu-section">Menu</button>
+                <button class="nav-btn" data-target="about-section">About</button>
+                <button class="nav-btn" data-target="contact-section">Contact</button>
+            </nav>
+            <div class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+    <!-- PERSON 1: Header - END -->
+
+    <!-- ============================================ -->
+    <!-- PERSON 2: Menu Section - START -->
+    <!-- ============================================ -->
+    <section id="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item" data-price="3.50">
+                <h3>Espresso</h3>
+                <p class="description">Strong and bold</p>
+                <p class="price">$3.50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item" data-price="4.50">
+                <h3>Cappuccino</h3>
+                <p class="description">Creamy and smooth</p>
+                <p class="price">$4.50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item" data-price="5.00">
+                <h3>Latte</h3>
+                <p class="description">Mild and sweet</p>
+                <p class="price">$5.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item" data-price="3.00">
+                <h3>Americano</h3>
+                <p class="description">Classic coffee</p>
+                <p class="price">$3.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item" data-price="5.50">
+                <h3>Mocha</h3>
+                <p class="description">Chocolate delight</p>
+                <p class="price">$5.50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item" data-price="4.00">
+                <h3>Macchiato</h3>
+                <p class="description">Espresso with foam</p>
+                <p class="price">$4.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- PERSON 2: Menu Section - END -->
+
+    <!-- ============================================ -->
+    <!-- PERSON 3: About Section - START -->
+    <!-- ============================================ -->
+    <section id="about-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p class="about-intro">
+                Welcome to Coffee House! Since 2020, we've been serving 
+                the finest quality coffee with passion and dedication. 
+                Our beans are carefully selected and roasted to perfection.
+            </p>
+            
+            <div class="testimonials" id="testimonials-container">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Best coffee in town!"</p>
+                    <p class="testimonial-author">— John D.</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"Amazing atmosphere!"</p>
+                    <p class="testimonial-author">— Sarah M.</p>
+                </div>
+            </div>
+            
+            <button id="show-more-btn">Show More Reviews</button>
+        </div>
+    </section>
+    <!-- PERSON 3: About Section - END -->
+
+    <!-- ============================================ -->
+    <!-- PERSON 4: Contact Section - START -->
+    <!-- ============================================ -->
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" placeholder="Your message here..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="form-feedback"></div>
+        </div>
+    </section>
+    <!-- PERSON 4: Contact Section - END -->
+
+    <!-- JavaScript Files -->
+    <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
